@@ -1,0 +1,373 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2>Add Project Information</h2>
+    <form name="form" ng-submit="addProject(project)" role="form">
+        <div class="form-group" ng-class="{ 'has-error': form.schoolName.$dirty && form.schoolName.$error.required }">
+            <label for="schoolName">School Name</label>
+            <select class="form-control" name="schoolName" id="schoolName" ng-model="project.schoolName" required>
+                <option value="2">Adams Middle School</option>
+                <option value="3">Advantage Elementary Academy</option>
+                <option value="4">Advantage Middle Academy</option>
+                <option value="5">Alafia Elementary</option>
+                <option value="6">Alexander Elementary</option>
+                <option value="7">Alonso Senior High</option>
+                <option value="11">Anderson Elementary</option>
+                <option value="12">Apollo Beach Elementary</option>
+                <option value="13">Armwood High School</option>
+                <option value="14">Bailey Elementary</option>
+                <option value="15">Ballast Point Elementary</option>
+                <option value="16">Barrington Middle School</option>
+                <option value="17">Bartels Middle</option>
+                <option value="18">Bay Crest Elementary</option>
+                <option value="19">Bellamy Elementary</option>
+                <option value="20">Benito Middle School</option>
+                <option value="21">Bevis Elementary</option>
+                <option value="22">Bing Elementary</option>
+                <option value="23">Blake Senior High</option>
+                <option value="24">Bloomingdale Senior High</option>
+                <option value="25">Bowers-Whitley Career Center</option>
+                <option value="26">Boyette Springs Elementary</option>
+                <option value="27">Brandon Alternative</option>
+                <option value="28">Brandon Senior High</option>
+                <option value="29">Brooker Elementary</option>
+                <option value="30">Brooks Debartolo Collegiate</option>
+                <option value="31">Broward Elementary</option>
+                <option value="32">Bryan Elementary-Plant City</option>
+                <option value="33">Bryant Elementary</option>
+                <option value="35">Buchanan Middle School</option>
+                <option value="36">Buckhorn Elementary</option>
+                <option value="37">Burnett Middle School</option>
+                <option value="38">Burney Elementary</option>
+                <option value="39">Burns Middle School</option>
+                <option value="40">Cahoon Elementary Magnet</option>
+                <option value="41">Caminiti Exceptional Center</option>
+                <option value="42">Cannella Elementary</option>
+                <option value="43">Carrollwood Elementary</option>
+                <option value="44">Carver Exceptional Ctr</option>
+                <option value="45">Chamberlain Senior High</option>
+                <option value="46">Channelside Acad Math And Sci</option>
+                <option value="47">Channelside Academy Middle Sch</option>
+                <option value="48">Chiaramonte Elementary</option>
+                <option value="49">Chiles Elementary</option>
+                <option value="50">Cimino Elementary</option>
+                <option value="51">Citrus Park Elementary</option>
+                <option value="52">Clair Mel Elementary</option>
+                <option value="53">Clark Elementary</option>
+                <option value="54">Claywell Elementary</option>
+                <option value="55">Cleveland Elementary</option>
+                <option value="56">Coleman Middle</option>
+                <option value="57">Collins Elementary</option>
+                <option value="58">Colson Elementary</option>
+                <option value="60">Community Charter Middle</option>
+                <option value="61">Community Charter School</option>
+                <option value="62">Cork Elementary School</option>
+                <option value="63">Corr Elementary</option>
+                <option value="64">Crestwood Elementary</option>
+                <option value="65">Cypress Creek Elementary</option>
+                <option value="66">Davidsen Middle School</option>
+                <option value="67">Davis Elementary</option>
+                <option value="68">Deer Park Elementary</option>
+                <option value="70">Desoto Elementary</option>
+                <option value="72">Dickenson Elementary</option>
+                <option value="75">Dorothy Thomas School</option>
+                <option value="76">Dover Elementary</option>
+                <option value="77">Dowdell Middle School</option>
+                <option value="78">Dunbar Elementary</option>
+                <option value="79">Durant High School</option>
+                <option value="80">East Bay Senior High</option>
+                <option value="81">Edison Elementary</option>
+                <option value="82">Egypt Lake Elementary</option>
+                <option value="83">Eisenhower Middle School</option>
+                <option value="86">Essrig Elementary</option>
+                <option value="88">Farnell Middle School</option>
+                <option value="89">Ferrell Middle Magnet</option>
+                <option value="90">Fishhawk Creek Elementary</option>
+                <option value="91">Florida Autism Charter School</option>
+                <option value="92">Folsom Elementary</option>
+                <option value="93">Forest Hills Elementary</option>
+                <option value="94">Foster Elementary</option>
+                <option value="95">Franklin Middle Magnet</option>
+                <option value="96">Freedom High School</option>
+                <option value="97">Frost Elementary</option>
+                <option value="366">Gaither Adult Center</option>
+                <option value="98">Gaither Senior High</option>
+                <option value="100">Gibsonton Elementary</option>
+                <option value="101">Giunta Middle School</option>
+                <option value="102">Gorrie Elementary</option>
+                <option value="103">Grady Elementary</option>
+                <option value="104">Graham Elementary</option>
+                <option value="105">Greco Middle School</option>
+                <option value="106">Hammond Elementary</option>
+                <option value="107">Henderson Hammock Charter Sch</option>
+                <option value="108">Heritage Elementary</option>
+                <option value="109">Hill Middle School</option>
+                <option value="111">Hillsborough Senior High</option>
+                <option value="114">Hunter&#39;s Green Elementary</option>
+                <option value="115">Ippolito Elementary</option>
+                <option value="116">Jackson Elementary</option>
+                <option value="117">James Elementary</option>
+                <option value="118">Jefferson Senior High</option>
+                <option value="119">Jennings Middle School</option>
+                <option value="120">Just Elementary</option>
+                <option value="121">Kenly Elementary</option>
+                <option value="122">Kids Community College</option>
+                <option value="124">Kids Community College Middle</option>
+                <option value="125">Kimbell Elementary</option>
+                <option value="126">King Senior High</option>
+                <option value="127">King&#39;s Kids Academy</option>
+                <option value="128">Kingswood Elementary</option>
+                <option value="129">Knights Elementary</option>
+                <option value="130">Lake Magdalene Elementary</option>
+                <option value="131">Lanier Elementary</option>
+                <option value="132">Lavoy Exceptional Center</option>
+                <option value="133">Learning Gate Community</option>
+                <option value="134">Lee Elementary</option>
+                <option value="135">Lennard High</option>
+                <option value="137">Leto Senior High</option>
+                <option value="138">Lewis Elementary</option>
+                <option value="139">Liberty Middle School</option>
+                <option value="140">Limona Elementary</option>
+                <option value="141">Lincoln Elementary</option>
+                <option value="143">Lithia Springs Elementary</option>
+                <option value="144">Lockhart Elementary Magnet</option>
+                <option value="145">Lomax Elementary</option>
+                <option value="146">Lopez Elementary</option>
+                <option value="147">Lopez Ese Center</option>
+                <option value="148">Lowry Elementary</option>
+                <option value="149">Lutz Elementary</option>
+                <option value="150">Lutz Preparatory School</option>
+                <option value="151">Mabry Elementary</option>
+                <option value="152">Macfarlane Park Elementary</option>
+                <option value="153">Madison Middle</option>
+                <option value="154">Mango Elementary</option>
+                <option value="155">Maniscalco Elementary</option>
+                <option value="156">Mann Middle School</option>
+                <option value="157">Marshall Middle School</option>
+                <option value="158">Martinez Middle School</option>
+                <option value="159">Mcdonald Elementary</option>
+                <option value="160">McKitrick Elementary</option>
+                <option value="161">Mclane Middle School</option>
+                <option value="162">Memorial Middle School</option>
+                <option value="163">Mendenhall Elementary</option>
+                <option value="164">Mendez Exceptional Center</option>
+                <option value="165">Metropolitan Ministries Elementary</option>
+                <option value="166">Middleton High School</option>
+                <option value="167">Miles Elementary</option>
+                <option value="168">Mintz Elementary</option>
+                <option value="169">Mitchell Elementary</option>
+                <option value="170">Monroe Middle</option>
+                <option value="171">Morgan Woods Elementary</option>
+                <option value="172">Mort Elementary</option>
+                <option value="173">MOSI Partnership Elementary</option>
+                <option value="174">Mount Pleasant</option>
+                <option value="175">Muller Elementary</option>
+                <option value="176">Mulrennan Middle</option>
+                <option value="331">Nature&#39;s Classroom</option>
+                <option value="177">Nelson Elementary</option>
+                <option value="178">New Springs Elmentary School</option>
+                <option value="179">New Springs Schools</option>
+                <option value="181">Newsome Senior High</option>
+                <option value="182">North Tampa Alternative School</option>
+                <option value="183">Northwest Elementary</option>
+                <option value="184">Oak Grove Elementary</option>
+                <option value="185">Oak Park Elementary</option>
+                <option value="186">Orange Grove Middle Magnet</option>
+                <option value="189">Palm River Elementary</option>
+                <option value="190">Pepin Academy Of Tampa</option>
+                <option value="193">Pepin Transitional School</option>
+                <option value="194">Pierce Middle School</option>
+                <option value="195">Pinecrest Elementary</option>
+                <option value="196">Pivot Charter School</option>
+                <option value="197">Pizzo Elementary</option>
+                <option value="198">Plant City Senior High</option>
+                <option value="199">Plant Senior High</option>
+                <option value="200">Potter Elementary</option>
+                <option value="201">Pride Elementary</option>
+                <option value="202">Progress Village Middle Magnet</option>
+                <option value="203">Rampello Downtown Partnership</option>
+                <option value="204">Randall Middle School</option>
+                <option value="205">Rcma Leadership Academy</option>
+                <option value="206">Rcma Wimauma Academy</option>
+                <option value="207">Reddick Elementary</option>
+                <option value="208">Riverhills Elementary</option>
+                <option value="210">Riverview Elementary</option>
+                <option value="211">Riverview Senior High</option>
+                <option value="212">Robinson Elementary</option>
+                <option value="213">Robinson Senior High</option>
+                <option value="214">Robles Elementary</option>
+                <option value="215">Rodgers Middle School</option>
+                <option value="216">Roland Park K-8 Magnet</option>
+                <option value="217">Roosevelt Elementary</option>
+                <option value="218">Ruskin Elementary</option>
+                <option value="219">Schmidt Elementary</option>
+                <option value="220">Schwarzkopf Elementary</option>
+                <option value="221">Seffner Elementary</option>
+                <option value="222">Seminole Elementary</option>
+                <option value="223">Seminole Heights Charter High</option>
+                <option value="235">Sergeant Smith Middle</option>
+                <option value="224">Sessums Elementary</option>
+                <option value="225">Shaw Elementary</option>
+                <option value="226">Sheehy Elementary</option>
+                <option value="227">Shields Middle School</option>
+                <option value="230">Shore Elementary</option>
+                <option value="231">Sickles Senior High</option>
+                <option value="232">Simmons Career Center</option>
+                <option value="233">Simmons Exceptional Center</option>
+                <option value="234">Sligh Middle School</option>
+                <option value="236">South County Career Center</option>
+                <option value="237">Spoto High</option>
+                <option value="238">Springhead Elementary</option>
+                <option value="239">Steinbrenner High School</option>
+                <option value="240">Stewart Middle Magnet</option>
+                <option value="241">Stowers Elementary</option>
+                <option value="242">Strawberry Crest High School</option>
+                <option value="243">Sulphur Springs Elementary</option>
+                <option value="244">Summerfield Crossing Elementary</option>
+                <option value="245">Summerfield Elementary</option>
+                <option value="246">Symmes Elementary</option>
+                <option value="247">Tampa Bay Blvd Elementary</option>
+                <option value="248">Tampa Bay Technical High Sch</option>
+                <option value="250">Tampa Palms Elementary</option>
+                <option value="255">Temple Terrace Elementary</option>
+                <option value="256">Terrace Community School</option>
+                <option value="4409">Thompson Elementary School</option>
+                <option value="258">Thonotosassa Elementary</option>
+                <option value="259">Tinker Elementary</option>
+                <option value="260">Tomlin Middle School</option>
+                <option value="261">Town And Country Elementary</option>
+                <option value="262">Trapnell Elementary</option>
+                <option value="263">Trinity School For Children</option>
+                <option value="265">Turkey Creek Middle School</option>
+                <option value="266">Turner Elementary</option>
+                <option value="267">Twin Lakes Elementary</option>
+                <option value="268">USF/Patel Partnership Elem</option>
+                <option value="269">Valrico Elementary</option>
+                <option value="270">Valrico Lake Advantage Acad</option>
+                <option value="271">Van Buren Middle School</option>
+                <option value="272">Village Of Excellence Acad</option>
+                <option value="274">Walden Lake Elementary</option>
+                <option value="275">Walker Middle Magnet School</option>
+                <option value="276">Walton Academy for Performing Arts</option>
+                <option value="34">Washington, B.T. Elementary</option>
+                <option value="277">Waters Career Center</option>
+                <option value="278">Webb Middle School</option>
+                <option value="279">West Shore Elementary</option>
+                <option value="280">West Tampa Elementary</option>
+                <option value="281">West University Charter High</option>
+                <option value="282">Westchase Elementary</option>
+                <option value="283">Wharton Senior High</option>
+                <option value="284">Williams Middle School</option>
+                <option value="286">Wilson Elementary</option>
+                <option value="287">Wilson Middle</option>
+                <option value="288">Wimauma Elementary</option>
+                <option value="289">Winthrop Charter School</option>
+                <option value="290">Witter Elementary</option>
+                <option value="291">Woodbridge Elementary</option>
+                <option value="292">Woodmont Charter School</option>
+                <option value="293">Yates Elementary</option>
+                <option value="294">Young Middle - Magnet</option>
+            </select>
+            <span ng-show="form.schoolName.$dirty && form.schoolName.$error.required" class="help-block">School name is required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.schoolAddress.$dirty && form.schoolAddress.$error.required }">
+            <label for="schoolName">School Address</label>
+            <input type="text" name="schoolAddress" id="schoolAddress" class="form-control" ng-model="project.schoolAddress" required />
+            <span ng-show="form.schoolAddress.$dirty && form.schoolAddress.$error.required" class="help-block">School address is required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.schoolState.$dirty && form.schoolState.$error.required }">
+            <label for="schoolState">School State</label>
+            <input type="text" name="schoolState" id="schoolState" class="form-control" ng-model="project.schoolState" required />
+            <span ng-show="form.schoolState.$dirty && form.schoolState.$error.required" class="help-block">School state is required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.schoolZip.$dirty && form.schoolZip.$error.required }">
+            <label for="schoolZip">School Zip</label>
+            <input type="text" name="schoolZip" id="schoolZip" class="form-control" ng-model="project.schoolZip" required />
+            <span ng-show="form.schoolZip.$dirty && form.schoolZip.$error.required" class="help-block">School zip is required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.schoolZip.$dirty && form.titleOneSchool.$error.required }">
+            <label for="titleOneSchool">Title One School</label>
+             <select class="form-control" name="titleOneSchool" id="titleOneSchool" ng-model="project.titleOneSchool" required>
+                 <option>No</option>
+                 <option>Yes</option>
+             </select>
+            <span ng-show="form.titleOneSchool.$dirty && form.titleOneSchool.$error.required" class="help-block">Required field</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.schoolZip.$dirty && form.gradeLevel.$error.required }">
+            <label for="gradeLevel">Grade Level</label>
+            <select class="form-control" name="gradeLevel" id="gradeLevel" ng-model="project.gradeLevel" required>
+                <option value="1">Kindergarten</option>
+                <option value="2">1st Grade</option>
+                <option value="3">2nd Grade</option>
+                <option value="4">3rd Grade</option>
+                <option value="5">4th Grade</option>
+                <option value="6">5th Grade</option>
+                <option value="7">6th Grade</option>
+                <option value="8">7th Grade</option>
+                <option value="9">8th Grade</option>
+                <option value="10">9th Grade</option>
+                <option value="11">10th Grade</option>
+                <option value="12">11th Grade</option>
+                <option value="13">12th Grade</option>
+                <option value="14">Entire School</option>
+                <option value="15">Other</option>
+            </select>
+            <span ng-show="form.gradeLevel.$dirty && form.gradeLevel.$error.required" class="help-block">Grade Level Required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.numberOfStudents.$dirty && form.numberOfStudents.$error.required }">
+            <label for="numberOfStudents">Number of Students Directly Impacted</label>
+            <input type="number" name="numberOfStudents" id="numberOfStudents" class="form-control" ng-model="project.numberOfStudents" required />
+            <span ng-show="form.numberOfStudents.$dirty && form.numberOfStudents.$error.required" class="help-block">Number of students required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.projectTitle.$dirty && form.projectTitle.$error.required }">
+            <label for="projectTitle">Project Title</label>
+            <input type="text" name="projectTitle" id="projectTitle" class="form-control" ng-model="project.projectTitle" required />
+            <span ng-show="form.projectTitle.$dirty && form.projectTitle.$error.required" class="help-block">Project title required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.projectCategory.$dirty && form.projectCategory.$error.required }">
+            <label for="projectCategory">Project Category</label>
+             <select class="form-control" name="projectCategory" id="projectCategory" ng-model="project.projectCategory" required>
+                <option>STEM</option>
+                <option>Literacy</option>
+                <option>Arts</option>
+                <option>Social Studies</option>
+                <option>Address School Challenge</option>
+                <option>Agriculture</option>
+                <option>Technology</option>
+             </select>
+            <span ng-show="form.projectCategory.$dirty && form.projectCategory.$error.required" class="help-block">Project category required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.mosaicProject.$dirty && form.mosaicProject.$error.required }">
+            <label for="mosaicProject">Are you applying for a MOSAIC project?</label>
+             <select class="form-control" name="mosaicProject" id="mosaicProject" ng-model="project.mosaicProject" required>
+                <option>No</option>
+                <option>Yes</option>
+             </select>
+            <span ng-show="form.mosaicProject.$dirty && form.mosaicProject.$error.required" class="help-block">Required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.cityOfTampaWaterProject.$dirty && form.cityOfTampaWaterProject.$error.required }">
+            <label for="cityOfTampaWaterProject">Are you applying for a City of Tampa Water Dept project?</label>
+             <select class="form-control" name="cityOfTampaWaterProject" id="cityOfTampaWaterProject" ng-model="project.cityOfTampaWaterProject" required>
+                <option>No</option>
+                <option>Yes</option>
+             </select>
+            <span ng-show="form.cityOfTampaWaterProject.$dirty && form.cityOfTampaWaterProject.$error.required" class="help-block">Required</span>
+        </div>
+         <div class="form-group" ng-class="{ 'has-error': form.goalAndObjective.$dirty && form.goalAndObjective.$error.required }">
+            <label for="goalAndObjective">Briefly describe the need, goal and objective of your project:</label>
+            <textarea rows="10" cols="50" name="goalAndObjective" id="goalAndObjective" class="form-control" ng-model="project.goalAndObjective">
+            Goal &amp; Objective 
+            </textarea>
+             <span ng-show="form.goalAndObjective.$dirty && form.goalAndObjective.$error.required" class="help-block">Required</span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': form.measureProjectImpact.$dirty && form.measureProjectImpact.$error.required }">
+            <label for="measureProjectImpact">Briefly describe how you will measure project impact.  Please be specific on how you will evaluate student learning:</label>
+            <textarea rows="10" cols="50" name="measureProjectImpact" id="measureProjectImpact" class="form-control" ng-model="project.measureProjectImpact">
+            Project Measurement
+            </textarea>
+             <span ng-show="form.measureProjectImpact.$dirty && form.measureProjectImpact.$error.required" class="help-block">Required</span>
+        </div>
+        <div class="form-actions">
+            <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">Add Project</button>
+        </div>
+    </form>
+    <pre>{{project | json}}</pre>
+</div>
